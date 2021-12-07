@@ -9,10 +9,8 @@ const admin = require("./routes/api/admin");
 app.use("/user", user);
 app.use("/admin", admin);
 
-app.use(express.static(path.join(__dirname, "public")));
-
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "notfound.html"));
+  res.sendFile(path.join(__dirname, "views/notfound.html"));
 });
 
 app.listen(port);
