@@ -2,14 +2,15 @@ const express = require("express");
 const path = require("path");
 const app = express();
 const port = 5000;
-const user = require("./api/user");
-const admin = require("./api/admin");
+const user = require("./routes/api/user");
+const admin = require("./routes/api/admin");
 
 app.use("/user", user);
 app.use("/admin", admin);
-
 app.use(express.static(path.join(__dirname, "public")));
+
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "notfound.html"));
 });
+
 app.listen(port);
