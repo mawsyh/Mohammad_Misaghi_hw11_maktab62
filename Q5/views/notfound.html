@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&family=Montserrat:wght@200;400;600&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f8f9d2;
+            background-image: linear-gradient(315deg, #f8f9d2 0%, #e8dbfc 74%);
+            height: 100vh;
+            font-family: "Montserrat";
+        }
+
+        .container {
+            width: 600px;
+            margin: 150px auto;
+            text-align: center;
+        }
+
+        .wlc-msg {
+            background-color: rgb(54, 17, 114);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        .wlc-msg h2 {
+            margin-bottom: 1rem;
+        }
+
+        button {
+            border: none;
+            padding: 1rem 2rem;
+            background-color: rgb(83, 56, 82);
+            color: white;
+            font-weight: bold;
+            letter-spacing: 2px;
+            border-radius: 4px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            transition: 0.3s ease;
+            transform: scale(1.04);
+        }
+
+        img {
+            margin-top: 30px;
+            width: 500px;
+            border-radius: 10px;
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wlc-msg">
+            <h2>
+                This page not found!
+            </h2>
+            <p>
+                Sry, the page you are looking for
+                seems not to exist.
+            </p>
+            <img src="404.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
